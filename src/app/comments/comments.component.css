@@ -1,0 +1,23 @@
+.comment {
+  padding: 20px;
+  box-sizing: border-box;
+}
+
+.comment ul {
+  list-style: none;
+}
+
+.comment .item {
+  padding: 10px;
+  box-sizing: border-box;
+  border: 0.5px solid rgba(192, 192, 192, 0.2);
+  margin-bottom: 40px;
+}
+
+.comment .item h3 {
+  margin: 0;
+}
+
+.comment .item p {
+  margin: 8px 0;
+}

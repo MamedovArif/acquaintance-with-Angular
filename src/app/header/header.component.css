@@ -1,0 +1,16 @@
+.header {
+  width: 100%;
+  min-height: 100px;
+  background-color: #32425C;
+  color: #ffffff;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.header p {
+  font-size: 20px;
+  line-height: 25px;
+  text-transform: uppercase;
+}

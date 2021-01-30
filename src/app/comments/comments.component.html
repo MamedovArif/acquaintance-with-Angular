@@ -1,0 +1,16 @@
+<div *ngIf="!loading" class="comment">
+
+  <ul *ngIf="parentComment.length; else noComments">
+    <li *ngFor="let comment of parentComment; let i = index" class="item">
+      <h3>{{comment.author_name}}</h3>
+      <p>{{comment.body}}</p>
+      <span>{{comment.date_time | date:'medium'}}</span>
+      <app-inner-comments [inner]="commentsService.comments" [parent]="comment.id"></app-inner-comments>
+    </li>
+  </ul>
+
+  <ng-template #noComments>
+    <p style="text-align: center;">No comments now!</p>
+  </ng-template>
+</div>
+<p *ngIf="loading" class="comment">Loading....</p>

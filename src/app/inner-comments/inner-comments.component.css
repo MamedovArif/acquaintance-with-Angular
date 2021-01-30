@@ -1,0 +1,20 @@
+.inner-comments {
+  list-style: none;
+  margin-top: 30px;
+}
+
+.inner-comments .inner-item {
+  margin-bottom: 30px;
+}
+
+.inner-comments .inner-item:hover {
+  border: 0.5px solid rgba(192, 192, 192, 0.2);
+}
+
+.inner-comments .inner-item h3 {
+  margin: 0;
+}
+
+.inner-comments .inner-item p {
+  margin: 8px 0;
+}

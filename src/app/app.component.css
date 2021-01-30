@@ -1,0 +1,12 @@
+.container {
+  display: flex;
+  flex-direction: column;
+}
+
+.container .column {
+  display: flex;
+  justify-content: space-between;
+  width: 1280px;
+  min-height: 1000px;
+  align-self: center;
+}

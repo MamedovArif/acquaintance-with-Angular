@@ -1,0 +1,8 @@
+<ul *ngIf="extract.length" class="inner-comments">
+  <li *ngFor="let comment of extract; let i = index" class="inner-item">
+    <h3>{{comment.author_name}}</h3>
+    <p>{{comment.body}}</p>
+    <span>{{comment.date_time | date:'medium'}}</span>
+    <app-inner-comments [inner]="full" [parent]="comment.id"></app-inner-comments>
+  </li>
+</ul>
